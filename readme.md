@@ -1,7 +1,10 @@
 # dg_pytorch
 
+### What it is
 
-## Installation
+A dynamic graph entity wrapper for running pytorch/torch script modules.
+
+### Installation
 
 Install pytorch:
 
@@ -18,31 +21,31 @@ unzip libtorch-cxx11-abi-shared-with-deps-1.7.0+cpu.zip
 sudo mv libtorch /opt/
 ```
 
-## Running the example
+### Running the example
 
 Generate the torch script module by running the python example
 
 ```
-cd example
+cd demo
 python pd.py
 ```
 
-Then, compile the example.
+After compiling the repo, you should be able to run the entity demo by running
 
 ```
-cd example
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+python entity_pd.py
 ```
 
-To launch the compiled executeable, run from within the `example` directory
+### Authors
 
-```
-./build/pd script_pd_controller.pt
-```
+- Julian Viereck
 
+### Copyrights
 
+Copyright(c) 2020 Max Planck Gesellschaft, New York University
+
+### License
+
+BSD 3-Clause License
 
 
