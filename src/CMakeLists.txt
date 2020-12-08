@@ -2,7 +2,7 @@
 # Creation of dynamic graph plugin/entity.
 #
 
-set(lib_name ${PROJECT_NAME}_entities)
+set(lib_name entities)
 # then we build the different entities in a dynamic-graph plugin.
 set(cpp_source_files
     dg_pytorch.cpp
